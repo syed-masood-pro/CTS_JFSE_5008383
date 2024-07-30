@@ -1,0 +1,33 @@
+1)Explain why data structures and algorithms are essential in handling large inventories.
+
+Managing large inventories becomes much easier with the right data structures and algorithms:
+•	Finding Products Fast: When we’re looking for something, we want it quickly. Simple searches can slow down as our inventory grows. Advanced tools like hash tables or binary search trees speed things up, making it much faster to find what we need.
+
+•	Keeping Things Updated: Updating product details needs to be quick and efficient. Unlike basic methods that can drag on, smart structures like balanced trees or hash tables let we add, delete, or change information swiftly.
+
+•	Handling Growth: As our inventory grows, we need a system that can keep up. Advanced data structures can handle this growth without the sluggish performance that simpler systems might suffer from.
+
+•	Organizing Smartly: Good data structures help us sort products by category, price, and more, making it easier to manage our inventory and provide a better experience for customers.
+
+
+2)Discuss the types of data structures suitable for this problem.
+
+•	Hash Table: hash table is a super-fast lookup tool. It lets us quickly find products using a unique identifier like a product ID, usually in just constant time (O(1)). However, if we need to sort products by attributes like category, hash tables might not be the best fit.
+
+•	Binary Search Tree (BST): A BST keeps things neatly sorted based on a chosen attribute, like product name. It makes searching, adding, or deleting products efficient (O(log n)). But, if you’re frequently adding new products in a random order, the tree might get a bit lopsided, which can slow things down.
+
+•	Self-Balancing BST (e.g., AVL Tree): They automatically stay balanced even as we make changes, keeping operations fast (O(log n)) no matter how many products we have or how often we update the inventory. They’re ideal for inventories that see a lot of action.
+
+
+3) Analyze the time complexity of each operation (add, update, delete) in your chosen data structure.
+
+•	Linear Search (add, update, delete): O(n) in the worst case, potentially slow for large inventories.
+
+•	Binary Search (search): O(log n) after sorting, efficient for large inventories, but adding/updating requires re-sorting, impacting performance.
+
+
+4) Discuss how you can optimize these operations.
+
+•	Choose appropriate data structure: Selecting a hash table for fast product ID retrieval or a self-balancing BST for sorted product name retrieval would significantly improve search performance.
+
+•	Indexing: If frequent searches are based on attributes like category, create additional indexes using data structures like hash tables or separate BSTs for faster filtering

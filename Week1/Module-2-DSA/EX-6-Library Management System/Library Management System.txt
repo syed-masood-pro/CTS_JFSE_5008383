@@ -1,0 +1,21 @@
+1) Explain linear search and binary search algorithms.
+
+Linear Search: Iterates through each element in the data set sequentially until the target element is found or the entire list is traversed.
+
+Binary Search: Requires a sorted data set. It repeatedly divides the search space in half by comparing the target element with the middle element. Based on the comparison result, it eliminates half of the remaining search space, focusing on the half likely to contain the target.
+
+
+2) Compare the time complexity of linear and binary search.
+
+Linear Search: O(n) in the worst case. This means the search time grows linearly with the number of elements (n) in the data set. In your code, linearSearchByTitle implements linear search.
+
+Binary Search: O(log n) in the worst case. This means the search time grows logarithmically with the number of elements. The binary search is implemented in binarySearchByTitle.
+
+
+3) Discuss when to use each algorithm based on the data set size and order.
+
+Data Set Order: Linear search works with any data set, ordered or unordered. Binary search, however, requires the data set to be sorted beforehand (like sortBooksByTitle does before binary search).
+
+Data Set Size: For small data sets, the difference in search times between linear and binary search might be negligible. However, as the data set size grows, binary search becomes significantly faster due to its logarithmic time complexity.
+
+

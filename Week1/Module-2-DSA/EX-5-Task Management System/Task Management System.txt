@@ -1,0 +1,29 @@
+1) Explain the different types of linked lists (Singly Linked List, Doubly Linked List).
+
+Singly Linked List: Each node in the list contains data and a reference (pointer) to the next node in the sequence. It offers efficient insertions and deletions at the beginning (O(1)) but requires traversal for searching or deleting from the middle (O(n)).
+
+Doubly Linked List: Similar to a singly linked list, each node has data and pointers. However, it also has a pointer to the previous node in the list. This allows for efficient insertions and deletions anywhere in the list (O(1)) but comes with additional memory overhead for the extra pointer
+
+
+2) Analyze the time complexity of each operation.
+
+
+addTask (Adding a Task): O(1) in the average case. Adding a new node at the beginning only involves updating the head pointer.
+
+searchTask (Searching a Task): O(n) in the worst case. It needs to iterate through the entire list to find the node with the matching taskId.
+
+traverse (Traversing Tasks): O(n). This operation iterates through the entire list to print each task's details.
+
+deleteTask (Deleting a Task):
+
+O(1) if the task is the head node (direct update of head).
+O(n) in the worst case for deleting from the middle. It requires iterating to find the node before the one to be deleted and updating its next pointer.
+
+
+3) Discuss the advantages of linked lists over arrays for dynamic data.
+
+Dynamic Size: Linked lists don't require a pre-defined size like arrays. New nodes can be added or removed anywhere in the list without the need for resizing the entire data structure.
+
+Efficient Insertions/Deletions: Inserting or deleting elements in the middle of a linked list involves updating pointers, which is generally faster than shifting elements in arrays (O(1) vs O(n)).
+
+Memory Efficiency: Linked lists avoid memory wastage compared to arrays. They only occupy memory for the actual data and pointers, unlike arrays that might have unused space if not filled completely.

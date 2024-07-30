@@ -1,0 +1,23 @@
+1)Explain different sorting algorithms (Bubble Sort, Insertion Sort, Quick Sort, Merge Sort)
+
+Bubble Sort: This is a simple comparison-based sorting technique. It repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The process is repeated until no swaps are needed, indicating a sorted list. While easy to understand, bubble sort has a time complexity of O(n^2), making it inefficient for large datasets.   
+
+Insertion Sort: This algorithm builds the sorted list one element at a time. It takes an element from the unsorted section and inserts it into its correct position in the sorted section. Insertion sort has a time complexity of O(n^2) in the worst case, but it can be more efficient than bubble sort for partially sorted data.
+
+Quick Sort: This is a divide-and-conquer sorting algorithm. It picks a pivot element from the list and partitions the data around it. Elements less than the pivot are placed before it, and elements greater than the pivot are placed after it. This process is then recursively applied to both sub-lists (before and after the pivot). Quick sort has an average time complexity of O(n log n), making it significantly faster than bubble or insertion sort for large datasets. However, the worst-case scenario can be O(n^2) if the pivot selection is consistently poor.
+
+Merge Sort: This is another divide-and-conquer sorting algorithm. It recursively divides the unsorted list into sub-lists containing a single element each. These sub-lists are then merged in a sorted manner to produce the final sorted list. Merge sort has a time complexity of O(n log n) in all cases, making it a reliable and efficient option for sorting large datasets.
+
+
+2)Compare the performance (time complexity) of Bubble Sort and Quick Sort.
+
+Bubble Sort: O(n^2) in the worst case and average case. Each element needs to be compared with its neighbors in the worst case, leading to a nested loop and quadratic time complexity.
+
+Quick Sort: O(n log n) on average. The divide-and-conquer approach significantly reduces comparisons needed to sort the data. However, the worst-case scenario can be O(n^2) if the pivot selection consistently creates unbalanced partitions, leading to a high number of comparisons.
+
+
+3)Discuss why Quick Sort is generally preferred over Bubble Sort.
+
+Efficiency: Quick sort has a significantly better average time complexity (O(n log n)) compared to bubble sort (O(n^2)). This translates to much faster sorting for large datasets.
+Simplicity: While quick sort involves recursion, it's conceptually simpler to understand and implement compared to bubble sort, which requires multiple nested loops.
+In-place sorting: Both algorithms are in-place sorting methods, meaning they sort the data within the existing array without requiring additional memory allocation.

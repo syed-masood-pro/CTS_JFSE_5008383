@@ -1,0 +1,35 @@
+1) Explain how arrays are represented in memory and their advantages.
+
+Arrays are a fundamental data structure in Java. They are stored in contiguous memory locations, meaning elements are placed sequentially in memory. This contiguous allocation offers several advantages:
+
+Efficient access: Elements can be accessed directly using their index since the memory location can be calculated quickly.
+
+Fast operations: Operations like traversal and searching by index are efficient due to direct memory access.
+
+Cache locality: Since elements are close in memory, processors can optimize access by fetching multiple elements at once into the cache for faster processing.
+
+
+2) Analyze the time complexity of each operation (add, search, traverse, delete).
+
+addEmployee: O(1) in the average case if there's space in the array. However, it becomes O(n) in the worst case if the array needs to be resized (creating a new array and copying existing elements) to accommodate the new employee.
+
+searchEmployee: O(n) in the worst case. It needs to iterate through the entire array to find the employee with the matching ID.
+
+traverseEmployees: O(n). This operation iterates through the entire array to print each employee's details.
+
+deleteEmployee: O(n) in the worst case. It needs to iterate through the array to find the employee and then shift remaining elements to fill the gap, potentially requiring n-1 shifts in the worst case.
+
+
+3) Discuss the limitations of arrays and when to use them.
+
+Fixed size: Once an array is created, its size cannot be changed dynamically.
+
+Memory wastage: If the array is not filled completely, there's wasted space in memory.
+
+Inefficient insertions/deletions: Inserting or deleting elements in the middle of the array requires shifting remaining elements, which can be inefficient for large arrays.
+
+Arrays are a good choice when:
+
+You know the size of the data upfront and it won't change much.
+You need efficient random access using indexes.
+You have a large dataset where memory contiguity and fast access are important.

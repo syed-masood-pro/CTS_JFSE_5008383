@@ -1,0 +1,17 @@
+1) Explain the concept of recursion and how it can simplify certain problems.
+
+Recursion is a programming technique where a function calls itself within its own definition. It's a powerful tool for solving problems that can be broken down into smaller, similar subproblems. In this code, calculateFutureValue calculates the future value for one fewer period (periods - 1) and then uses that result to calculate the future value for the current period.
+
+
+2) Discuss the time complexity of your recursive algorithm.
+
+The original recursive implementation in this code has a time complexity of O(n^periods). This happens because for each period, a new recursive call is made, potentially calculating the same subproblems multiple times.
+
+
+3) Explain how to optimize the recursive solution to avoid excessive computation.
+
+For scenarios involving large time periods or complex calculations, recursion can lead to a stack overflow or inefficient computation. To optimize:
+
+    Memoization: Store previously computed results to avoid redundant calculations.
+
+    Iterative Approach: Replace recursion with an iterative approach to save on stack space and reduce overhead.
