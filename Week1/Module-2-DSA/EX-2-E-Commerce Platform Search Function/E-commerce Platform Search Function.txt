@@ -14,7 +14,7 @@ O(n^2): Quadratic time - execution time grows quadratically with input size (e.g
 3)Compare the time complexity of linear and binary search algorithms.
 
 Linear Search: O(n) in the worst and average case. Each element needs to be compared in the worst case.
-Binary Search: O(log n) in the average and best case. The search space is halved with each comparison. However, the data needs to be sorted beforehand, which can add O(n log n) time complexity depending on the sorting algorithm used.
 
+Binary Search: O(log n) in the average and best case. The search space is halved with each comparison. However, the data 
+needs to be sorted beforehand, which can add O(n log n) time complexity depending on the sorting algorithm used.
 
-4)Discuss which algorithm is more suitable for your platform and why.
