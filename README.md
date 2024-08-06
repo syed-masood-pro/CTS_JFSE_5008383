@@ -8,8 +8,7 @@
 ## Week 1
 ## Module - 1 : Design Patterns and Principles
 ## Module - 2 : Data Structures and Algorithms
-
-
+---
 ## Week 2
 ## Module - 3 : Spring Core and Maven
 ## Module - 4 : PL/SQL Programming
