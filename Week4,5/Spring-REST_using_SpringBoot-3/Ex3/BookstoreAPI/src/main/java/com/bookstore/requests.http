@@ -1,0 +1,44 @@
+### Get all books (no filters)
+GET http://localhost:8080/books
+Accept: application/json
+
+### Get books by title
+GET http://localhost:8080/books?title=Spring Boot in Action
+Accept: application/json
+
+### Get books by author
+GET http://localhost:8080/books?author=Craig Walls
+Accept: application/json
+
+### Get books by title and author
+GET http://localhost:8080/books?title=Spring Boot in Action&author=Craig Walls
+Accept: application/json
+
+### Get a book by ID
+GET http://localhost:8080/books/1
+Accept: application/json
+
+### Add a new book
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+  "title": "Spring Boot in Action",
+  "author": "Craig Walls",
+  "price": 34.99,
+  "isbn": "1617292540"
+}
+
+### Update a book by ID
+PUT http://localhost:8080/books/1
+Content-Type: application/json
+
+{
+  "title": "Spring Boot: A Comprehensive Guide",
+  "author": "Craig Walls",
+  "price": 39.99,
+  "isbn": "1617292540"
+}
+
+### Delete a book by ID
+DELETE http://localhost:8080/books/1

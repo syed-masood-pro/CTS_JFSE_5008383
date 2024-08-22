@@ -1,0 +1,33 @@
+### Add a new book
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+  "title": "Harry Potter",
+  "author": "J.K.Rowling",
+  "price": 1500,
+  "isbn": "1617292540"
+}
+
+### Get all books
+GET http://localhost:8080/books
+Accept: application/json
+
+### Get a book by ID
+GET http://localhost:8080/books/1
+Accept: application/json
+
+
+### Update a book by ID
+PUT http://localhost:8080/books/1
+Content-Type: application/json
+
+{
+  "title": "Hamlet",
+  "author": "Shakersphere",
+  "price": 1250,
+  "isbn": "1617292540"
+}
+
+### Delete a book by ID
+DELETE http://localhost:8080/books/1
